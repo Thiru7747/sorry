@@ -44,6 +44,14 @@
         box-sizing: border-box;
       }
 
+      .line-2 .heart {
+        -webkit-text-stroke: 0;
+        color: initial; /* emoji ignores color anyway, but this resets the transparent */
+        font-family:
+          "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+        display: inline-block;
+      }
+
       html {
         -webkit-text-size-adjust: 100%;
         scroll-behavior: smooth;
@@ -1884,7 +1892,9 @@
 
             <h1 class="hero-title" id="heroTitle">
               <span class="line line-1">MOCHI</span>
-              <span class="line line-2">CHU ❤️</span>
+              <span class="line line-2"
+                >CHU <span class="heart">&#9829;</span></span
+              >
               <span class="sorry-sticker"
                 ><span class="sticker-im">i'm</span> SORRY</span
               >
